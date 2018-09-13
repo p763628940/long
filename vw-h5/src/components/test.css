@@ -1,0 +1,48 @@
+:root {
+    --color: red;
+}
+
+@svg 1px-border {height:2px; @rect{  fill: var(--color, black);  width: 100%;  height: 50%;}}
+@svg square { @rect{ fill: var(--color, black); width: 100%; height: 100%; } }
+#example { background: white svg(square param(--color #00b1ff)); }
+#example2 {
+    border: 1px solid transparent;
+    border-image: svg(1px-border param(--color #00b1ff)) 1 stretch;
+}
+.aa:before {
+    padding-top: 150%;
+    height: 2px;
+}
+
+.red {
+    --color: red
+}
+
+.btn {
+    padding: 2rem 4rem;
+    border: 2px solid var(--color, black);
+    background: transparent;
+    font-size: 0.6rem;
+    border-radius: 2px;
+}
+
+.btn:hover {
+    cursor: pointer;
+    background: var(--color, black);
+    color: white;
+}
+
+[w-324-324] {
+    width: 324px;
+    height: 324px;
+    border: 1px solid transparent;
+    border-image: svg(square param(--color #00b1ff)) 2  2 stretch;
+
+}
+.aac{
+    width: 300px;
+    height: 200px;
+    border: 1px solid transparent;
+    background: white svg(square param(--color #00b1ff)) repeat-y top left bottom;
+    background-size: 1px 100%;
+}
