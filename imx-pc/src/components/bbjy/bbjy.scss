@@ -1,0 +1,2433 @@
+$color_glo:#5141ff;
+$red:#d32f47;
+$green:#4b9b5e;
+/*红色*/
+
+.red {
+    color: $red !important;
+}
+/*绿色*/
+
+.green {
+    color: $green !important;
+}
+
+
+
+.el-checkbox {
+    font-weight: 400;
+}
+
+
+#bb-content {
+    .el-checkbox__input.is-checked .el-checkbox__inner,
+    .el-checkbox__input.is-indeterminate .el-checkbox__inner {
+        background-color: #6f6bc2;
+        border-color: #6f6bc2;
+    }
+    .el-checkbox__input.is-focus .el-checkbox__inner {
+        border-color: #6f6bc2;
+    }
+    .el-checkbox__input.is-checked+.el-checkbox__label {
+        color: #6f6bc2;
+    }
+    /*设置日期的宽度*/
+    .el-date-editor--daterange.el-input__inner {
+        width: 230px;
+        margin-top: 2px;
+    }
+    .el-range-editor--mini.el-input__inner {
+        height: 33px;
+    }
+    /*设置时间内容宽度 */
+    .el-date-editor .el-range-input {
+        width: 36%;
+    }
+    /*设置清空按钮*/
+    .el-date-editor .el-range__close-icon {
+        width: 10px;
+        line-height: 29px;
+    }
+    /*选中框的颜色*/
+    .el-range-editor.is-active {
+        border-color: $color_glo;
+    }
+    .el-range-editor.is-active,
+    .el-range-editor.is-active:hover {
+        border-color: $color_glo;
+    }
+    /*按钮选中颜色*/
+    .el-button {
+        margin: 4px 0 0 10px;
+    }
+    .el-checkbox__label {
+        color: #fff;
+    }
+    .el-button--success {
+        margin: 0 !important;
+        /*border-color: #fff !important;*/
+        background: #fff !important;
+        color: #333 !important;
+        margin-left: 10px !important;
+        border: 1px solid #dcdfe6 !important;
+    }
+    .el-button:active {
+        color: $color_glo;
+    }
+    /*分页样式*/
+    .el-pagination.is-background .el-pager li:not(.disabled).active {
+        background: #9f99f2;
+        border: 1px solid #9f99f2;
+        color: #fff;
+    }
+}
+/*小手*/
+
+.cursor {
+    cursor: pointer;
+}
+/*input边框线*/
+
+.focus-active {
+    border: 1px solid #a199f4 !important;
+}
+/*防止闪屏*/
+
+[v-cloak] {
+    display: none;
+}
+/*判断火狐*/
+
+@-moz-document url-prefix() {
+    .xx {
+        width: 100px !important;
+    }
+    .title {
+        .shi-chang,
+        .jia-ge {
+            width: 110px !important;
+        }
+    }
+    .zixuan-content {
+        .money,
+        .baifen,
+        .chengjiao {
+            width: 110px !important;
+        }
+    }
+}
+/*白色版本的边框*/
+
+.boder_white {
+    border-bottom: 1px solid #eee !important;
+}
+/*当前委托的字体颜色*/
+
+.dan-qian {
+    td {
+        color: #000 !important;
+    }
+    .deal-content:nth-last-of-type(1) {
+        border-bottom: 1px solid #ddd !important;
+        .datail-content {
+            border-bottom: 1px solid #ddd !important;
+        }
+    }
+}
+/*资产管理*/
+
+.border-top {
+    border-top: 1px solid #eee !important;
+}
+
+.border-bottom {
+    border-bottom: 1px solid #eee !important;
+}
+
+.background-hover {
+    background: #e6e6e6 !important;
+}
+
+.background-hover2:hover {
+    background: #f8f9fa !important;
+}
+/*历史成交详情部分*/
+
+.History_cuccess_white {
+    background: #fff !important;
+    color: #000 !important;
+    border-top: none !important;
+}
+/*提示暂无数据*/
+
+.no-data {
+    width: 100%;
+    text-align: center;
+    line-height: 30px;
+}
+
+.no-data-active {
+    color: #000 !important;
+}
+/*选中白版本的内容*/
+
+.box-title-white {
+    background: #e6e6e6 !important;
+    color: #000 !important;
+    border-color: #eee !important;
+}
+/*提示白版样式*/
+
+.tishi_white {
+    background: #fff !important;
+    box-shadow: 2px 2px 5px #666 !important;
+    color: #000 !important;
+}
+/*媒体查询*/
+
+@media only screen and (max-width:1920px) and (min-width:1605px) {
+    .bb-wrapper-left {
+        margin-right: 780px !important;
+    }
+    .bb-wrapper-right {
+        width: 750px;
+    }
+    .shi-shi .numTime li {
+        margin-right: 44px;
+    }
+    .tu-biao img {
+        height: 585px !important;
+    }
+    .mai-mai .mm-title li {
+        margin-left: 15px !important;
+    }
+    .shi-shi .numTime li {
+        margin-right: 52px !important;
+    }
+}
+
+@media only screen and (max-width:1706px) {
+    #table-container {
+        li:nth-of-type(1) {
+            flex: 1.8 !important;
+        }
+    }
+    .tab-wrapper {
+        li:nth-of-type(1) {
+            flex: 1.8 !important;
+        }
+    }
+}
+
+@media only screen and (max-width: 1605px) {
+    .bb-wrapper-left {
+        margin-right: 660px;
+    }
+    .bb-wrapper-right {
+        width: 635px;
+    }
+}
+
+@media only screen and (max-width:1660px) {
+    .hb-header .hb-header-left li {
+        margin-left: 5px !important;
+    }
+    .time-tab-left {
+        width: 50% !important;
+    }
+}
+
+@media only screen and (max-width: 1510px) {
+    .bb-wrapper-left {
+        .huan-suan {
+            font-size: 12px !important;
+        }
+        .gao-di {
+            font-size: 12px !important;
+        }
+    }
+}
+
+@media only screen and (max-width: 1480px) {
+    .bb-wrapper-left {
+        margin-right: 630px;
+    }
+    .bb-wrapper-right {
+        width: 605px;
+    }
+    .mm-title {
+        font-size: 13px !important;
+        box-sizing: border-box;
+        padding-left: 5px;
+    }
+    .gao-di {
+        li {
+            font-size: 13px;
+            margin: 0 25px;
+        }
+    }
+    .mai-rujia {
+        padding-left: 0 !important;
+    }
+    .time-tab-left {
+        width: 50% !important;
+    }
+    .tab_Currency {
+        width: 80% !important;
+    }
+}
+
+@media only screen and (max-width: 1375px) {
+    .gao-di {
+        margin-left: 10px !important;
+        li {
+            margin-left: 0 !important;
+        }
+    }
+    .time-tab-left {
+        width: 50% !important;
+        padding-left: 0 !important;
+    }
+    .tab_Currency {
+        p:nth-of-type(4),
+        p:nth-of-type(5) {
+            flex: 0.4 !important;
+            text-align: center !important;
+        }
+        p:nth-of-type(2) {
+            flex: 0.7 !important;
+        }
+    }
+    .tab-bi {
+        padding-left: 0 !important;
+        p {
+            width: 150px !important;
+        }
+    }
+}
+
+@media only screen and (max-width: 1368px) {
+    .time-tab-left {
+        width: 40% !important;
+        padding-left: 0 !important;
+    }
+    .gao-di {
+        margin-left: 10px !important;
+        li {
+            margin-left: 0 !important;
+        }
+    }
+}
+
+@media only screen and (max-width: 1330px) {
+    .gao-di {
+        margin-right: 5px !important;
+    }
+    .show-datail li:nth-last-child(1) {
+        padding-right: 0 !important;
+    }
+    .huan-suan {
+        margin: 0 !important;
+    }
+    .time-tab-left {
+        width: 40% !important;
+        padding-left: 0 !important;
+    }
+}
+
+@media only screen and (max-width: 1313px) {
+    .tab_Currency {
+        p {
+            font-size: 12px !important;
+        }
+    }
+}
+
+@media only screen and (max-width: 1300px) {
+    .gao-di {
+        li {
+            margin-right: 6px !important;
+        }
+    }
+    .time-tab-left {
+        li {
+            margin: 0 0 !important;
+            font-size: 12px !important;
+        }
+    }
+    .tab-bi {
+        .iconfont {
+            display: none !important;
+        }
+    }
+}
+
+@media only screen and (max-width: 1285px) {
+    #table-container {
+        ul {
+            padding: 0 !important;
+        }
+        li:nth-of-type(1) {
+            flex: 1.2 !important;
+        }
+    }
+    .tab-wrapper {
+        ul {
+            padding: 0 !important;
+        }
+        li:nth-of-type(1) {
+            flex: 1.2 !important;
+        }
+    }
+    .tab_Currency {
+        display: flex !important;
+        display: -ms-flexbox !important;
+        /* TWEENER - IE 10 */
+        justify-content: space-between;
+        p {
+            margin: 0 !important;
+        }
+    }
+}
+
+@media only screen and (max-width: 1275px) {
+    #table-container {
+        ul {
+            padding: 0 !important;
+        }
+        li:nth-of-type(1) {
+            flex: 1.2 !important;
+            overflow: hidden;
+        }
+    }
+    .tab-wrapper {
+        ul {
+            padding: 0 !important;
+        }
+        li:nth-of-type(1) {
+            flex: 1.2 !important;
+        }
+    }
+    .time-tab-left {
+        width: 40% !important;
+        padding-left: 0 !important;
+    }
+    .time-tab .time-tab-left li {
+        margin: 0 !important;
+    }
+    .tab-bi p {
+        width: 140px !important;
+    }
+}
+
+@media only screen and (max-width: 1250px) {
+    .time-tab .time-tab-right .time-title {
+        margin: 12px 0px 0 20px;
+    }
+    .huan-suan {
+        .border-right {
+            margin: 0 !important;
+        }
+    }
+    .show-datail li:nth-last-child(2) {
+        width: 18% !important;
+    }
+    .show-datail li:nth-last-child(1) {
+        width: 20% !important;
+    }
+    .time-tab .time-tab-right .time-title {
+        margin-left: 0 !important;
+    }
+    .time-tab-left {
+        width: 40% !important;
+    }
+    .time-tab .time-tab-right .time-title {
+        margin: 0 !important;
+        line-height: 0 !important;
+    }
+    .time-tab .time-tab-right .block {
+        margin-left: 0 !important;
+    }
+    #bb-content .el-button--success {
+        margin-left: 0px !important;
+    }
+}
+
+@media only screen and (max-width: 1240px) {
+    .huan-suan {
+        span {
+            margin-left: 0 !important;
+        }
+    }
+    .tab-bi {
+        width: 130px !important;
+        padding-left: 0px !important;
+    }
+}
+/*资产管理*/
+/*币币主体内容*/
+
+#bb-content {
+    margin-top: 15px;
+}
+/*币种资料*/
+/*白色版本的蒙版*/
+
+.alert-header-search-write {
+    input {
+        color: #000 !important;
+    }
+}
+
+.write-menban_wrapper {
+    background-color: #fff !important;
+    .menban_title {
+        color: #000 !important;
+    }
+    .btc-js {
+        border-bottom: 1px solid #ddd;
+    }
+    .jj-title,
+    .btc-js {
+        color: #8a84d4 !important;
+    }
+    .jj-content {
+        color: #000 !important;
+    }
+    .liao-jie {
+        a {
+            color: #8a84d4 !important;
+        }
+    }
+}
+/*蒙版*/
+
+.alert_mengban {
+    width: 100%;
+    height: 100%;
+    transition: all .3s;
+    .mengban {
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        left: 0;
+        top: 0;
+        z-index: 50;
+        background-color: rgba(0, 0, 0, 0.5);
+        transition: all .3s;
+    }
+    .menban_wrapper {
+        width: 445px;
+        height: 450px;
+        position: fixed;
+        top: 20%;
+        left: 40%;
+        z-index: 100;
+        background-color: #22223f;
+        border-radius: 5px;
+        color: #fff;
+        transition: .5s all;
+        .menban_content {
+            width: 385px;
+            height: 395px;
+            margin: 15px auto;
+            /*头部*/
+            .menban_title {
+                width: 100%;
+                height: 30px;
+                h1 {
+                    float: left;
+                }
+                .icon-cuowu {
+                    cursor: pointer;
+                    float: right;
+                }
+            }
+            /*比特币介绍部分*/
+            .btc-js {
+                width: 100%;
+                height: 35px;
+                line-height: 35px;
+                color: #c2c2ff;
+                font-size: 12px;
+                border-bottom: 1px solid #3c3b5e;
+            }
+            /*简介部分*/
+            .jian_jie {
+                width: 100%;
+                height: 350px;
+                position: relative;
+                .jj-title {
+                    width: 100%;
+                    height: 38px;
+                    line-height: 38px;
+                    color: #c2c2ff;
+                }
+                .jj-content {
+                    width: 100%;
+                    font-size: 14px;
+                    line-height: 25px;
+                }
+            }
+            /*了解更多*/
+            .liao-jie {
+                margin-top: 20px;
+                position: absolute;
+                right: 0;
+                bottom: 0;
+                a {
+                    color: #c2c2ff;
+                }
+            }
+        }
+    }
+}
+/*查看更多*/
+
+.cha_kan {
+    color: #fff;
+}
+/*选中按钮部分*/
+
+.jage .iconfont {
+    font-size: 12px;
+}
+/*全部+买入+卖出*/
+
+.quan-mai {
+    border-bottom: 1px solid #eee !important;
+    span {
+        color: #e5e5e5 !important;
+    }
+    .cha_kan {
+        color: #000 !important;
+    }
+    .shen-he-alter {
+        border: 1px solid #e5e5e5 !important;
+        background-color: #fff !important;
+        dd {
+            color: #000 !important;
+            border-bottom: 1px solid #ddd !important;
+        }
+        dd:hover {
+            background-color: #f5f5f5 !important;
+        }
+    }
+}
+/*背景颜色值的改变*/
+
+.bg_color {
+    color: #000 !important;
+    background-color: #fff !important;
+    border-color: #e9ecf1 !important;
+    #table-container-wt-content {
+        ul {
+            li {
+                color: #000;
+            }
+        }
+    }
+    .balane {
+        border-bottom: 1px solid #eee !important;
+    }
+    /*约等于*/
+    .yuedeng {
+        color: #4338bd !important;
+    }
+    /*左侧底部内容*/
+    .title-right {
+        color: #4338bd !important;
+    }
+    .wt-title {
+        border-bottom: 1px solid #eee !important;
+    }
+    #table-container,
+    #table-container2 {
+        li {
+            color: #333 !important;
+        }
+    }
+    #table-container3 {
+        li {
+            color: #666 !important;
+        }
+    }
+    /*切换币种部分右边框*/
+    .border-right {
+        color: #e5e5e5 !important;
+    }
+    /*右侧买入卖出部分*/
+    .jg-sl {
+        li {
+            color: #666 !important;
+        }
+    }
+    .mai-mai {
+        border-right: 1px solid #eee !important;
+    }
+    .mmTab-content {
+        .mm-money:nth-of-type(2) {
+            border-bottom: none !important;
+        }
+        .mm-money {
+            border-bottom: 1px solid #eee !important;
+        }
+        td {
+            color: #333;
+        }
+    }
+    .shi-shi {
+        .ss-title {
+            border-bottom: 1px solid #eee !important;
+        }
+        .numTime {
+            li {
+                color: #666 !important;
+            }
+        }
+        .table {
+            td {
+                color: #000 !important;
+            }
+        }
+    }
+    /*市价部分*/
+    .sj-title {
+        border-bottom: 1px solid #eee !important;
+    }
+    .border-bottom {
+        /*历史成交   时间   类型    一栏边框*/
+        border-top: 1px solid #eee !important;
+    }
+    .background-hover {
+        /*历史成交手续费*/
+        border-color: #ddd !important;
+    }
+    /*市价部分*/
+    /*止盈止损*/
+    .zhi-left {
+        .mai-usdt {
+            .text {
+                color: #7167fe !important;
+            }
+        }
+        .jage-title {
+            border: 1px solid #eee !important;
+            input {
+                background: #fff !important;
+                color: #000 !important;
+            }
+            .iconfont {
+                background: #fff !important;
+                color: #000 !important;
+                border-left: 1px solid #eee;
+            }
+            .iconfont:nth-last-child(1) {
+                border-top: 1px solid #eee;
+            }
+        }
+    }
+    .shijia-left {
+        .shijia-mai {
+            .text {
+                color: #a0a0a0 !important;
+            }
+            .jage {
+                background: #fff !important;
+                border: 1px solid #d4d4d4;
+                input {
+                    box-sizing: border-box;
+                    padding-left: 10px;
+                    color: #000 !important;
+                }
+            }
+        }
+    }
+    .time-tab {
+        border-bottom: 1px solid #eee !important;
+    }
+    .mai-rujia {
+        .text {
+            color: #a0a0a0 !important;
+        }
+        .mai-usdt {
+            .jage {
+                background: #eee !important;
+                color: #666 !important;
+                .jage-title {
+                    border: 1px solid #d4d4d4;
+                    input {
+                        /*box-sizing: border-box;*/
+                        padding-left: 10px !important;
+                        color: #000 !important;
+                        background: #fff !important;
+                    }
+                }
+                .iconfont {
+                    background: #fff !important;
+                    color: #000 !important;
+                    border-left: 1px solid #eee !important;
+                    font-size: 12px;
+                }
+                .iconfont:nth-of-type(2) {
+                    border-top: 1px solid #eee !important;
+                }
+            }
+        }
+        .mai-data {
+            .jage {
+                background: #fff !important;
+                border: 1px solid #d4d4d4;
+                input {
+                    box-sizing: border-box;
+                    padding-left: 10px;
+                    color: #000 !important;
+                }
+            }
+        }
+        .jiao-yi {
+            .moneyNum {
+                color: #666 !important;
+            }
+        }
+    }
+}
+/*字体颜色--切换币种--*/
+
+.active_color {
+    color: #4338bd !important;
+}
+/*字体颜色加下边框*/
+
+.active_color1 {
+    border-bottom: 2px solid #7167fe !important;
+    color: #7167fe !important;
+}
+/*弹框变化*/
+
+.alert-active {
+    background-color: #fff !important;
+    border-color: #e9ecf1 !important;
+    .alert-header-list {
+        color: #000 !important;
+    }
+    .alert-header {
+        border-bottom: 1px solid #e5e5e5 !important;
+    }
+    .title {
+        color: #333 !important;
+        border-bottom: 1px solid #e5e5e5 !important;
+    }
+    .content-box-list {
+        li {
+            border-bottom: 1px solid #e5e5e5 !important;
+            color: #000 !important;
+        }
+        li:hover {
+            background: #f5f5f5 !important;
+        }
+    }
+    .zixuan-content {
+        li {
+            border-bottom: 1px solid #e5e5e5 !important;
+            color: #000 !important;
+        }
+        li:hover {
+            background: #f5f5f5 !important;
+        }
+    }
+}
+
+$color_glo:#5141ff;
+/*全局的字体颜色*/
+
+$color_border:#e6e6e6;
+/*hover效果里面的border*/
+
+$color_mai:#5d5b98;
+/*文本框boder*/
+
+$bg-glo:#23223a;
+/*文本框背景*/
+
+$mai_money:#393862;
+/*买入价背景颜色*/
+
+$bi_zhong:#6c66ad;
+/*币种颜色值*/
+
+$green:#4b9b5e;
+$red:#d32f47;
+.btc {
+    color: $bi_zhong;
+}
+
+.btc_white {
+    color: #a0a0a0 !important;
+}
+/*买*/
+
+.money-hua1 {
+    color: #549463;
+}
+
+.money-zheng1 {
+    color: #dc3249;
+}
+/*选择委托*/
+
+.wt-active {
+    border-bottom: 2px solid $color_glo;
+    color: $color_glo;
+}
+/*选择切换币种*/
+
+.qh-active {
+    color: #bbb5ff;
+}
+
+.qh-active-white {
+    color: #4338bd;
+}
+/*背景颜色*/
+
+.write {
+    color: #fff;
+}
+
+.black {
+    color: #4338bd !important;
+}
+
+.placeholder_white {
+    color: #b9b9b9 !important;
+}
+/*改变颜色*/
+/*买卖 按钮*/
+
+.submit {
+    width: 240px !important;
+    height: 35px !important;
+    line-height: 35px !important;
+    background: $green !important;
+    border-radius: 5px;
+    border: none !important;
+    outline: none;
+    padding: 0 !important;
+    color: #fff !important;
+    margin-left: 60px !important;
+    font-size: 16px !important;
+    margin-top: 10px !important;
+}
+
+.submit:hover,
+.sub-mai:hover {
+    color: #fff !important;
+}
+
+.sub-mai {
+    width: 240px !important;
+    height: 35px !important;
+    line-height: 35px !important;
+    background: $red !important;
+    border-radius: 5px;
+    border: none !important;
+    outline: none;
+    padding: 0 !important;
+    color: #fff !important;
+    margin-left: 60px !important;
+    font-size: 16px !important;
+    margin-top: 10px !important;
+}
+/*旋转内容*/
+
+.rotate {
+    top: 0 !important;
+    transform: rotate(-70deg);
+    -ms-transform: rotate(-70deg);
+    /* IE 9 */
+    -moz-transform: rotate(-70deg);
+    /* Firefox */
+    -webkit-transform: rotate(180deg);
+    /* Safari 和 Chrome */
+    -o-transform: rotate(-70deg);
+    /* Opera */
+}
+/*右侧区域内容*/
+/*限价 市价 止盈止损部分*/
+
+.sj-title {
+    width: 100%;
+    height: 42px;
+    line-height: 40px;
+    border-bottom: 1px solid #2e3157;
+    font-size: 15px;
+    .title-left {
+        li {
+            display: inline-block;
+            float: left;
+            margin-left: 18px;
+            cursor: pointer;
+        }
+        li:nth-of-type(2),
+        li:nth-of-type(3) {
+            margin-left: 28px;
+        }
+    }
+    .title-right {
+        float: right;
+        margin-right: 20px;
+        color: #7e78c2;
+        cursor: pointer;
+    }
+}
+/*市价切换内容*/
+
+.shijia-content {
+    display: none;
+}
+/*止盈止损内容*/
+/*市价内容*/
+
+.shijia-left {
+    width: 50%;
+    box-sizing: border-box;
+    padding-left: 12px;
+    float: left;
+    .shijia-mai {
+        width: 315px;
+        height: 35px;
+        margin-top: 20px;
+        margin-bottom: 30px;
+        .text {
+            float: left;
+            display: inline-block;
+            width: 62px;
+            height: 23px;
+            font-size: 14px;
+            line-height: 23px;
+            text-align: center;
+            color: rgb(126, 120, 194);
+        }
+        .jage {
+            width: 238px;
+            height: 35px;
+            line-height: 35px;
+            float: left;
+            border: 1px solid $color_mai;
+            border-radius: 4px;
+            background-color: #23223a;
+            box-sizing: border-box;
+            display: flex;
+            display: -ms-flexbox;
+            /* TWEENER - IE 10 */
+            justify-content: space-between;
+            font-size: 14px;
+            padding-right: 10px;
+            input,
+            p {
+                width: 76%;
+                height: 35px;
+                display: inline-block;
+                border: none;
+                border-top-left-radius: 4px;
+                border-bottom-left-radius: 4px;
+                background: none;
+                outline: none;
+                color: #fff;
+                padding-left: 10px;
+            }
+            p {
+                color: #857ed0;
+            }
+            span {
+                color: rgb(126, 120, 194);
+            }
+        }
+    }
+    .bai-fen {
+        width: 235px;
+        height: 23px;
+        line-height: 23px;
+        margin: 15px 0 10px 63px;
+        color: #7e78c2;
+        span:nth-of-type(1) {
+            margin-left: 0;
+        }
+        span {
+            margin-left: 30px;
+            cursor: pointer;
+        }
+    }
+}
+/*限价内容*/
+/*卖出价*/
+
+.mai-chujia {
+    @extend .mai-rujia;
+}
+/*买入价*/
+
+.mai-rujia {
+    width: 50%;
+    float: left;
+    font-size: 14px;
+    color: #7e78c2;
+    box-sizing: border-box;
+    padding-left: 12px;
+    /*闪电交易*/
+    .lightning {
+        width: 100%;
+        line-height: 25px;
+        box-sizing: border-box;
+        padding-left: 65px;
+    }
+.lightningWhite{
+  .el-checkbox__label{
+    color:#000 !important;
+  }
+}
+    /*提交*/
+    .submit {
+        width: 240px;
+        height: 35px;
+        background: $green;
+        border-radius: 5px;
+        outline: none;
+        color: #fff;
+        margin-left: 60px;
+        font-size: 16px;
+        margin-top: 10px;
+    }
+    /*交易额*/
+    .jiao-yi {
+        width: 315px;
+        height: 55px;
+        line-height: 55px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        .text {
+            color: #7e78c2;
+            display: inline-block;
+            width: 62px;
+            height: 23px;
+            line-height: 23px;
+            text-align: center;
+        }
+    }
+    /*百分比*/
+    .bai-fen {
+        width: 235px;
+        height: 23px;
+        line-height: 23px;
+        font-size: 12px;
+        margin: 15px 0 0 63px;
+        span:nth-of-type(1) {
+            margin-left: 0;
+        }
+        span {
+            margin-left: 30px;
+            cursor: pointer;
+        }
+    }
+    .baiFen-active {
+        color: #fff;
+    }
+    /*买入量*/
+    .mai-data {
+        width: 315px;
+        height: 35px;
+        margin-top: 4px;
+        .text {
+            float: left;
+            display: block;
+            width: 62px;
+            height: 23px;
+            line-height: 23px;
+            text-align: center;
+            color: #7e78c2;
+        }
+        .jage {
+            width: 238px;
+            height: 35px;
+            float: left;
+            border: 1px solid $color_mai;
+            border-radius: 4px;
+            background-color: #23223a;
+            input {
+                width: 75%;
+                height: 35px;
+                border: none;
+                border-top-left-radius: 4px;
+                border-bottom-left-radius: 4px;
+                background: none;
+                outline: none;
+                color: #fff;
+                padding-left: 10px;
+            }
+            .jage-title {
+                .iconfont {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+    /*买入价格USDT*/
+    .mai-usdt {
+        width: 100%;
+        height: 70px;
+        margin-top: 17px;
+        .text {
+            float: left;
+            display: block;
+            width: 62px;
+            height: 23px;
+            line-height: 23px;
+            text-align: center;
+            color: #7e78c2;
+        }
+        .jage {
+            width: 240px;
+            height: 60px;
+            float: left;
+            border-radius: 4px;
+            background: $mai_money;
+            .num {
+                width: 100%;
+                height: 22px;
+                box-sizing: border-box;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                line-height: 22px;
+                padding-left: 10px;
+                font-size: 12px;
+            }
+            .jage-title {
+                width: 238px;
+                height: 35px;
+                position: relative;
+                border-top-left-radius: 4px;
+                border-top-right-radius: 4px;
+                border: 1px solid $color_mai;
+                .pos_font {
+                    position: absolute;
+                    top: 12px;
+                    right: 35px;
+                    color: #6c66ad;
+                }
+                input {
+                    width: 210px;
+                    height: 35px;
+                    border: none;
+                    float: left;
+                    color: #fff;
+                    font-size: 14px;
+                    padding-left: 10px;
+                    box-sizing: border-box;
+                    outline: none;
+                    border-top-left-radius: 4px;
+                    background: #23223a;
+                }
+                dl {
+                    float: left;
+                    p {
+                        width: 27px;
+                        height: 17px;
+                        line-height: 16px;
+                        text-align: center;
+                        border-left: 1px solid $color_mai;
+                        cursor: pointer;
+                        background: #23223a;
+                        color: white;
+                    }
+                    p:nth-of-type(1) {
+                        border-top-right-radius: 7px;
+                    }
+                    p:nth-last-child(1) {
+                        border-top: 1px solid $color_mai;
+                    }
+                }
+            }
+        }
+    }
+}
+/*单个卖的内容*/
+
+.money-hua,
+.money-zheng {
+    width: 100%;
+    height: 480px;
+    overflow: hidden;
+    .market_depth {
+        width: 100%;
+        dl {
+            width: 100%;
+            height: 24px;
+            display: flex;
+            display: -ms-flexbox;
+            /* TWEENER - IE 10 */
+            align-items: center;
+            justify-content: space-between;
+            box-sizing: border-box;
+            padding: 0 15px;
+            position: relative;
+            .progress {
+                height: 20px;
+                position: absolute;
+                right: 0px;
+                top: 3px;
+                z-index: 0.1;
+            }
+            .progress.red {
+                background: rgba(220, 50, 73, 0.16);
+            }
+            .progress.green {
+                background: rgba(84, 148, 99, 0.16);
+            }
+            .mai {
+                color: #dc3249;
+            }
+            .maii {
+                color: #549463;
+            }
+            dd {
+                flex: 1;
+                text-align: right;
+            }
+            dd:nth-of-type(1) {
+                text-align: left;
+                flex: 0.2;
+                box-sizing: border-box;
+            }
+            dd:nth-of-type(2) {
+                flex: 0.8;
+            }
+        }
+    }
+}
+/*买卖全部内容*/
+
+.mm-money:nth-of-type(2) {
+    border-bottom: none;
+}
+
+.mm-money {
+    width: 100%;
+    height: 240px;
+    border-bottom: 1px solid #2e3157;
+    overflow: hidden;
+    .market_depth {
+        width: 100%;
+        dl {
+            width: 100%;
+            height: 24px;
+            display: flex;
+            display: -ms-flexbox;
+            /* TWEENER - IE 10 */
+            align-items: center;
+            justify-content: space-between;
+            box-sizing: border-box;
+            padding: 0 15px;
+            position: relative;
+            .progress {
+                height: 20px;
+                position: absolute;
+                right: 0px;
+                top: 3px;
+                z-index: 0.1;
+            }
+            .progress.red {
+                background: rgba(220, 50, 73, 0.16);
+            }
+            .progress.green {
+                background: rgba(84, 148, 99, 0.16);
+            }
+            .mai {
+                color: #dc3249;
+            }
+            .maii {
+                color: #549463;
+            }
+            dd {
+                flex: 1;
+                text-align: right;
+                z-index: 66;
+            }
+            dd:nth-of-type(1) {
+                text-align: left;
+                flex: 0.2;
+                box-sizing: border-box;
+            }
+            dd:nth-of-type(2) {
+                flex: 0.8;
+            }
+        }
+    }
+}
+/*暂无行情数据*/
+
+.NoData {
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    color: #ddd;
+}
+
+.noDate_white {
+    color: #000 !important;
+}
+
+.money:nth-last-child(1) {
+    border-bottom: none;
+}
+
+.bb-wrapper-right {
+    float: right;
+    margin-right: 14px;
+    min-height: 100%;
+}
+/*限价   市价  止盈止损*/
+
+.shi-jia {
+    width: 100%;
+    height: 348px;
+    position: relative;
+    margin-top: 12px;
+    border-radius: 2px;
+    color: #fff;
+    background: #16182c;
+    .tishi {
+        padding: 10px 20px 15px 10px;
+        width: 200px;
+        text-align: center;
+        line-height: 30px;
+        color: #fff;
+        font-size: 14px;
+        background: #414182;
+        box-shadow: 2px 2px 5px #000;
+        border-radius: 2px;
+        position: absolute;
+        top: 30%;
+        left: 35%;
+        z-index: 999;
+        .icon-gantanhao {
+            color: #d32f47;
+            margin-right: 6px;
+        }
+        .icon-duihao2 {
+            color: #4b9b5e;
+            margin-right: 6px;
+        }
+    }
+}
+/*买入卖出 */
+
+.box-content {
+    width: 100%;
+    height: 605px;
+    color: #fff;
+    background: #16182c;
+    border-radius: 3px;
+    .balane {
+        width: 100%;
+        height: 40px;
+        line-height: 36px;
+        box-sizing: border-box;
+        border-bottom: 1px solid #2e3157;
+        .text {
+            box-sizing: border-box;
+            padding-left: 20px;
+            font-size: 14px;
+            a {
+                color: #bbb5ff;
+            }
+        }
+        .money {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            display: -ms-flexbox;
+            /* TWEENER - IE 10 */
+            align-items: center;
+            font-size: 14.5px;
+            .yan {
+                font-size: 18px;
+                margin: 0 10px 0 14px;
+                cursor: pointer;
+            }
+            .yuedeng {
+                color: #bbb5ff;
+            }
+            .noShow {
+                .iconfont {
+                    font-size: 12px;
+                    transform: scale(0.5);
+                }
+            }
+        }
+    }
+}
+
+.mai-mai {
+    width: 50%;
+    height: 560px;
+    border-right: 1px solid #2e3157;
+    box-sizing: border-box;
+    float: left;
+    /*买卖头部选项*/
+    .mm-title {
+        width: 100%;
+        height: 40px;
+        line-height: 40px;
+        display: flex;
+        font-size: 14px;
+        box-sizing: border-box;
+        border-bottom: 1px solid #2e3157;
+        padding: 0 10px;
+        li,
+        .shen-he,
+        a,
+        .border-right {
+            cursor: pointer;
+        }
+        li,
+        .shen-he,
+        {
+            flex: .62;
+        }
+        a {
+            flex: .7;
+            text-align: center;
+        }
+        span {
+            margin: 0 8px;
+            color: #303257;
+        }
+        .shen-he {
+            flex: .6;
+            display: flex;
+            align-items: center;
+            position: relative;
+            text-align: left;
+            box-sizing: border-box;
+            padding-left: 3px;
+            .iconfont {
+                font-size: 10px;
+                margin-left: 5px;
+                position: absolute;
+                right: 0px;
+                top: 1px;
+                transition: all .3s;
+            }
+            .shen-he-alter {
+                width: 132px;
+                background: #383962;
+                box-shadow: 0 0 1px #000;
+                position: absolute;
+                top: 35px;
+                left: 20px;
+                z-index: 100;
+                border-radius: 6px;
+                text-align: center;
+                color: #fff;
+                dd {
+                    width: 100%;
+                    height: 30px;
+                    line-height: 30px;
+                    border-bottom: 1px solid #303257;
+                }
+                dd:hover {
+                    background: #303256;
+                }
+                dd:nth-of-type(1) {
+                    border-top-left-radius: 5px;
+                    border-top-right-radius: 5px;
+                }
+                dd:nth-last-child(1) {
+                    border-bottom: none;
+                    border-bottom-left-radius: 5px;
+                    border-bottom-right-radius: 5px;
+                }
+            }
+        }
+    }
+    /*价格，数量,金额*/
+    .jg-sl {
+        width: 100%;
+        height: 30px;
+        line-height: 30px;
+        font-size: 12px;
+        display: flex;
+        display: -ms-flexbox;
+        /* TWEENER - IE 10 */
+        align-items: center;
+        justify-content: space-between;
+        box-sizing: border-box;
+        padding: 0 15px;
+        li {
+            flex: 1;
+            text-align: right;
+        }
+        li:nth-of-type(1) {
+            text-align: left;
+            flex: 0.2;
+            box-sizing: border-box;
+        }
+        li:nth-of-type(2) {
+            flex: 0.8;
+        }
+        /*li {
+            cursor: pointer;
+            float: left;
+            width: 30%;
+            height: 30px;
+            text-align: center;
+            line-height: 30px;
+            color: #fff;
+            span {
+                margin-left: 2px;
+            }
+        }
+        li:nth-of-type(1) {
+            margin-left: 28px;
+        }	*/
+    }
+    /*买卖选项内容*/
+    .mmTab-content {
+        display: none;
+    }
+}
+/*实时成交*/
+
+.shi-shi {
+    width: 50%;
+    height: 554px;
+    box-sizing: border-box;
+    float: left;
+    .ss-title {
+        width: 100%;
+        height: 40px;
+        line-height: 40px;
+        padding-left: 10px;
+        font-size: 14px;
+        box-sizing: border-box;
+        border-bottom: 1px solid #2e3157;
+    }
+    .ss-content {
+        width: 100%;
+        height: 480px;
+        overflow-y: auto;
+        overflow-x: hidden;
+        .table {
+            width: 100%;
+            td {
+                height: 25x;
+                line-height: 23px;
+                box-sizing: border-box;
+                text-align: center;
+                color: #fff;
+            }
+            td:nth-of-type(1) {
+                width: 30px;
+                text-align: right;
+                box-sizing: border-box;
+                padding-right: 5px;
+            }
+        }
+    }
+    .numTime {
+        width: 100%;
+        height: 30px;
+        box-sizing: border-box;
+        line-height: 30px;
+        padding-left: 45px;
+        li {
+            float: left;
+            font-size: 12px;
+            color: #fff;
+            margin-right: 25px;
+            span {
+                margin-left: 5px;
+            }
+        }
+    }
+}
+/*左侧内容区域*/
+/*图表模块*/
+
+.bz-content {
+    width: 100%;
+    height: 630px;
+    border-radius: 3px;
+    color: #fff;
+    background: #16182c;
+}
+/*切换币种选择部分*/
+
+.xxk-active {
+    color: #bbb5ff;
+    border-bottom: 2px solid #bbb5ff;
+}
+
+.xxk-active-white {
+    color: #4338bd;
+    border-bottom: 2px solid #4338bd;
+}
+/*选中字体颜色*/
+
+.xz-active {
+    a {
+        color: #4338bd !important;
+    }
+}
+/*图表*/
+
+.tu-biao {
+    width: 100%;
+    min-height: 590px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    img {
+        width: 100%;
+        height: 100%;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+}
+/*资产管理*/
+
+.isGuanli {
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    left: 0;
+    top: 70px;
+    font-size: 14px;
+}
+/*历史委托*/
+
+.time-tab {
+    width: 100%;
+    height: 37px;
+    border-bottom: 1px solid #575284;
+    display: flex;
+    display: -ms-flexbox;
+    /* TWEENER - IE 10 */
+    align-items: center;
+    .time-tab-left {
+        width: 30%;
+        box-sizing: border-box;
+        padding-left: 25px;
+        display: flex;
+        display: -ms-flexbox;
+        /* TWEENER - IE 10 */
+        li {
+            flex: 1;
+            height: 35px;
+            line-height: 35px;
+            float: left;
+            font-size: 13px;
+            cursor: pointer;
+        }
+        li:nth-of-type(3) {
+            margin-left: 10px;
+        }
+        li:nth-of-type(4) {
+            margin-left: 5px;
+        }
+    }
+    .time-tab-right {
+        line-height: 37px;
+        display: flex;
+        display: -ms-flexbox;
+        /* TWEENER - IE 10 */
+        align-items: center;
+        .time-title {
+            display: block;
+        }
+        .block {
+            margin-left: 10px;
+        }
+    }
+}
+/*历史成交详情部分*/
+
+.details {
+    color: #7e78c2;
+    cursor: pointer;
+}
+/*当前委托*/
+
+#table-container {
+    ul {
+        width: 100%;
+        height: 43px;
+        line-height: 43px;
+        display: flex;
+        display: -ms-flexbox;
+        /* TWEENER - IE 10 */
+        justify-content: space-between;
+        box-sizing: border-box;
+        padding: 0 25px;
+        li:nth-of-type(1) {
+            text-align: left;
+            flex: 1.2;
+        }
+        li:nth-of-type(2) {
+            flex: 0.8;
+        }
+        li:nth-of-type(3) {
+            flex: 0.7;
+        }
+        li {
+            flex: 1;
+            line-height: 43px;
+            box-sizing: border-box;
+            align-items: center;
+            text-align: right;
+            color: #7e78c2;
+        }
+        li:nth-last-of-type(1) {
+            flex: 0.7;
+        }
+    }
+}
+
+#table-container2 {
+    ul {
+        width: 100%;
+        display: flex;
+        display: -ms-flexbox;
+        /* TWEENER - IE 10 */
+        justify-content: space-between;
+        height: 43px;
+        align-items: center;
+        box-sizing: border-box;
+        padding: 0 25px;
+        li {
+            flex: 1;
+            font-size: 12px;
+            color: #7e78c2;
+            text-align: right;
+        }
+        li:nth-of-type(1) {
+            text-align: left;
+        }
+    }
+    ul:nth-of-type(1) {
+        border-bottom: none;
+    }
+}
+
+#table-container-wt {
+    ul {
+        width: 100%;
+        height: 43px;
+        display: flex;
+        display: -ms-flexbox;
+        /* TWEENER - IE 10 */
+        align-items: center;
+        justify-content: space-between;
+        box-sizing: border-box;
+        padding: 0 25px;
+        li {
+            color: #7e78c2;
+        }
+        li:nth-of-type(1) {
+            text-align: left;
+            flex: 1;
+        }
+        li:nth-last-of-type(1) {
+            flex: 1;
+            text-align: right;
+        }
+        li:nth-of-type(2),
+        li:nth-of-type(3) {
+            flex: 1.5;
+            text-align: left;
+        }
+        li:nth-of-type(4) {
+            flex: 1;
+        }
+    }
+}
+
+#table-container-wt-content {
+    @extend #table-container-wt;
+    ul {
+        li {
+            color: #fff;
+        }
+    }
+}
+/*资产管理部分*/
+
+.assets {
+    width: 100%;
+    border-top: 1px solid #515774;
+    ul {
+        width: 100%;
+        height: 35px;
+    }
+    li {
+        width: 15%;
+        text-align: center;
+        line-height: 40px !important;
+    }
+    li:nth-of-type(1) {
+        width: 15% !important;
+    }
+}
+/*历史成交*/
+
+.tab-wrapper {
+    #table-container2 {
+        li:nth-of-type(2) {
+            width: 13%;
+        }
+    }
+}
+
+.No_record_white {
+    color: #000 !important;
+}
+/*左侧大模块*/
+
+.bb-wrapper-left {
+    height: 915px;
+    /*委托*/
+    .wei-tuo {
+        width: 100%;
+        height: 320px;
+        margin-top: 12px;
+        color: #fff;
+        background: #16182c;
+        border-radius: 2px;
+        .wt-title {
+            width: 100%;
+            height: 40px;
+            line-height: 40px;
+            border-bottom: 1px solid #2e3157;
+        }
+        .list {
+            float: left;
+            li {
+                float: left;
+                font-size: 14px;
+                margin-left: 25px;
+                cursor: pointer;
+            }
+        }
+        .wt-content {
+            width: 100%;
+            height: 230px;
+            position: relative;
+            display: none;
+            /*分页器居左*/
+            .pageCount {
+                width: 100%;
+                height: 40px;
+                margin-top: 5px;
+                display: flex;
+                display: -ms-flexbox;
+                /* TWEENER - IE 10 */
+                justify-content: flex-end;
+                align-items: center;
+                box-sizing: border-box;
+                padding-right: 18px;
+            }
+            /*暂无记录*/
+            .No_record {
+                width: 100%;
+                height: 50px;
+                line-height: 50px;
+                text-align: center;
+                font-size: #fff;
+                position: absolute;
+                top: 40%;
+            }
+            /*资产管理*/
+            .assetsBox {
+                width: 100%;
+                height: 235px;
+                overflow-x: hidden;
+                overflow-y: auto;
+            }
+            /*当前委托数据展示*/
+            .tab-wrapper {
+                width: 100%;
+                height: 175px;
+                overflow-x: hidden;
+                overflow-y: auto;
+                ul {
+                    width: 100%;
+                    display: flex;
+                    display: -ms-flexbox;
+                    /* TWEENER - IE 10 */
+                    justify-content: space-between;
+                    box-sizing: border-box;
+                    padding: 0 20px;
+                    li:nth-of-type(1) {
+                        text-align: left;
+                        flex: 1.2;
+                    }
+                    li:nth-of-type(2) {
+                        flex: 0.8;
+                    }
+                    li:nth-of-type(3) {
+                        flex: 0.7;
+                    }
+                    li:nth-last-of-type(1) {
+                        flex: 0.7;
+                    }
+                    li {
+                        flex: 1;
+                        height: 35px;
+                        box-sizing: border-box;
+                        padding: 10px 0;
+                        align-items: center;
+                        text-align: right;
+                    }
+                }
+                .che {
+                    color: #7e78c2;
+                    cursor: pointer;
+                }
+            }
+            /*历史成交*/
+            .tab-wrapper2 {
+                width: 100%;
+                height: 150px;
+                overflow-x: hidden;
+                overflow-y: auto;
+                .deal-content:nth-last-of-type(1) {
+                    border-bottom: 1px solid #515774;
+                    .datail-content {
+                        border-bottom: 1px solid #515774;
+                    }
+                }
+                .deal-content {
+                    width: 100%;
+                    /*内容部分*/
+                    .deal-list:nth-of-type(1) {
+                        border-top: 1px solid #515774;
+                    }
+                    .deal-list {
+                        width: 100%;
+                        height: 39px;
+                        /*border-bottom: 1px solid #515774;*/
+                        display: flex;
+                        display: -ms-flexbox;
+                        /* TWEENER - IE 10 */
+                        align-items: center;
+                        justify-content: space-between;
+                        box-sizing: border-box;
+                        padding: 0 25px;
+                        li:nth-of-type(1) {
+                            flex: 1;
+                            text-align: left;
+                        }
+                        li {
+                            flex: 1;
+                            text-align: right;
+                        }
+                    }
+                    /*点击详情显示*/
+                    .show-datail {
+                        width: 100%;
+                        background: #151523;
+                        display: none;
+                        clear: both;
+                        border-top: 1px solid #242B40;
+                        .datail-title {
+                            width: 100%;
+                            height: 35px;
+                            line-height: 35px;
+                            display: flex;
+                            display: -ms-flexbox;
+                            /* TWEENER - IE 10 */
+                            justify-content: space-between;
+                            border-bottom: 1px solid #242B40;
+                            box-sizing: border-box;
+                            padding: 0 20px;
+                            li {
+                                flex: 0.8;
+                                text-align: center;
+                            }
+                            li:nth-of-type(1) {
+                                flex: 1;
+                                text-align: left;
+                            }
+                            li:nth-last-of-type(1) {
+                                flex: 1.2;
+                                text-align: right;
+                            }
+                        }
+                        .datail-content {
+                            width: 100%;
+                            height: 35px;
+                            line-height: 35px;
+                            display: flex;
+                            display: -ms-flexbox;
+                            /* TWEENER - IE 10 */
+                            justify-content: space-between;
+                            border-bottom: 1px solid #242B40;
+                            box-sizing: border-box;
+                            padding: 0 20px;
+                            li {
+                                flex: 0.8;
+                                text-align: center;
+                            }
+                            li:nth-of-type(1) {
+                                flex: 1;
+                                text-align: left;
+                            }
+                            li:nth-last-of-type(1) {
+                                flex: 1.2;
+                                text-align: right;
+                            }
+                        }
+                        /*hover效果*/
+                        .datail-content:hover {
+                            background: #1c1c31;
+                        }
+                        .datail-content:nth-last-child(1) {
+                            border-bottom: none;
+                        }
+                    }
+                }
+            }
+            /*历史委托*/
+            .wt-data {
+                width: 100%;
+                height: 156px;
+                overflow-x: hidden;
+                overflow-y: auto;
+                #table-container {
+                    ul {
+                        li {
+                            color: #fff;
+                        }
+                    }
+                }
+                li {
+                    text-align: center;
+                    height: 35px;
+                    line-height: 20px;
+                }
+                li:nth-of-type(1) {
+                    width: 16%;
+                }
+                li:nth-of-type(2) {
+                    width: 16%;
+                }
+                #table-container {
+                    li {
+                        color: #7e78c2;
+                    }
+                }
+            }
+            /*分页器 */
+            .pageCount {
+                width: 100%;
+                /*height: 50px;*/
+                display: flex;
+                display: -ms-flexbox;
+                /* TWEENER - IE 10 */
+                justify-content: flex-end;
+                align-items: center;
+            }
+        }
+    }
+    /*币种*/
+    .tab-bizhong {
+        width: 100%;
+        height: 40px;
+        position: relative;
+        line-height: 40px;
+        border-bottom: 1px solid #2e3157;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        display: flex;
+        display: -ms-flexbox;
+        /* TWEENER - IE 10 */
+        /*切换内容*/
+        .alert {
+            width: 500px;
+            height: 260px;
+            box-shadow: 0 0 5px #000;
+            position: absolute;
+            left: 5px;
+            top: 40px;
+            background: #383962;
+            border-radius: 4px;
+            /*币种切换内容*/
+            .alert-content-box {
+                width: 100%;
+                height: 186px;
+                overflow-y: auto;
+                overflow-x: hidden;
+                /*内容*/
+                .content-box-list {
+                    width: 100%;
+                    border-bottom-left-radius: 4px;
+                    border-bottom-right-radius: 4px;
+                    /*主币区和创新区*/
+                    .box-title {
+                        width: 100%;
+                        height: 30px;
+                        line-height: 22px;
+                        box-sizing: border-box;
+                        padding-left: 30px;
+                        padding-top: 5px;
+                        border-bottom: 1px solid #303257;
+                        p {
+                            height: 17px;
+                            line-height: 17px;
+                            color: #7e78c2;
+                            font-size: 14px;
+                            border-left: 2px solid #7e78c2;
+                            box-sizing: border-box;
+                            padding-left: 10px;
+                        }
+                    }
+                    li:hover {
+                        background: #303256;
+                    }
+                    li:last-child(1) {
+                        border: none;
+                        border-top-left-radius: 4px;
+                        border-top-right-radius: 4px;
+                    }
+                    li {
+                        width: 100%;
+                        height: 35px;
+                        line-height: 33px;
+                        border-bottom: 1px solid #303257;
+                        cursor: pointer;
+                        color: #fff;
+                        display: flex;
+                        display: -ms-flexbox;
+                        /* TWEENER - IE 10 */
+                        p {
+                            /*float: left;*/
+                            font-size: 12px;
+                        }
+                        .tab_bz_container {
+                            /*float: left;*/
+                            width: 75%;
+                            display: flex;
+                            display: -ms-flexbox;
+                            /* TWEENER - IE 10 */
+                            box-sizing: border-box;
+                            justify-content: space-between;
+                            p {
+                                flex: 1;
+                                text-align: right;
+                            }
+                            p:nth-of-type(1) {
+                                flex: 1.4;
+                                text-align: left;
+                            }
+                            p:nth-of-type(2) {
+                                flex: 0.8;
+                                text-align: right;
+                            }
+                            .chengjiao {
+                                flex: 1.2;
+                                box-sizing: border-box;
+                                padding-right: 20px;
+                            }
+                        }
+                        /*星星*/
+                        .xx {
+                            width: 25%;
+                            .iconfont {
+                                font-size: 12px;
+                                margin-left: 17px;
+                                margin-right: 10px;
+                            }
+                        }
+                        /*价格*/
+                        /*.money {
+                            width: 120px;
+                            box-sizing: border-box;
+                            padding-left: 10px;
+                        }*/
+                        /*24h涨跌*/
+                        /*.baifen {
+                            margin-left: 30px;
+                        }
+                        .baifen,
+                        .chengjiao {
+                            width: 100px;
+                            box-sizing: border-box;
+                            padding-left: 5px;
+                        }*/
+                    }
+                }
+                .zixuan-content {
+                    @extend .content-box-list;
+                    .box-title {
+                        p {
+                            font-size: 14px !important;
+                        }
+                    }
+                    p {
+                        font-size: 12px !important;
+                    }
+                }
+            }
+            /*市场*/
+            .title {
+                width: 100%;
+                height: 30px;
+                line-height: 30px;
+                font-size: 12px;
+                color: #fff;
+                border-bottom: 1px solid #303257;
+                display: flex;
+                display: -ms-flexbox;
+                /* TWEENER - IE 10 */
+                justify-content: space-between;
+                align-items: center;
+                .shi-chang {
+                    width: 25%;
+                    span {
+                        margin-left: 20px;
+                    }
+                }
+                .right {
+                    width: 75%;
+                    display: flex;
+                    display: -ms-flexbox;
+                    /* TWEENER - IE 10 */
+                    align-items: center;
+                    li {
+                        flex: 0.8;
+                        text-align: left;
+                    }
+                    li:nth-of-type(1) {
+                        flex: 1.5;
+                        text-align: left;
+                    }
+                    li:nth-of-type(2) {
+                        text-align: right;
+                    }
+                    li:nth-last-of-type(1) {
+                        flex: 1.2;
+                        text-align: right;
+                        box-sizing: border-box;
+                        padding-right: 20px;
+                    }
+                }
+            }
+            /*币种类型*/
+            .alert-header {
+                width: 100%;
+                height: 37px;
+                border-bottom: 1px solid #303257;
+                .alert-header-list {
+                    float: left;
+                    color: #fff;
+                    li {
+                        float: left;
+                        height: 35px;
+                        font-size: 13px;
+                        margin-left: 19px;
+                        cursor: pointer;
+                    }
+                }
+                .alert-header-search {
+                    width: 114px;
+                    height: 21px;
+                    line-height: 21px;
+                    float: right;
+                    border-radius: 4px;
+                    border: 1px solid #181828;
+                    margin: 10px 10px 0 0;
+                    box-sizing: border-box;
+                    color: #000;
+                    input {
+                        width: 80%;
+                        height: 100%;
+                        float: left;
+                        border: none;
+                        outline: none;
+                        margin-left: 5px;
+                        background: none;
+                        color: #fff;
+                    }
+                    .iconfont {
+                        font-size: 14px;
+                        float: left;
+                        margin: 0 0 0 3px;
+                        color: #181828;
+                    }
+                }
+            }
+        }
+        /*币种切换*/
+        .tab-bi {
+            width: 175px;
+            height: 40px;
+            line-height: 40px;
+            font-size: 15px;
+            box-sizing: border-box;
+            padding-left: 10px;
+            /*float: left;*/
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+            p {
+                width: 155px;
+                text-align: center;
+            }
+            .iconfont {
+                font-weight: bold;
+                font-size: 13px;
+                position: absolute;
+                right: 5px;
+                top: 1px;
+                transition: .3s all;
+            }
+        }
+        /*价格换算   高低*/
+        .tab_Currency {
+            width: 70%;
+            height: 40px;
+            line-height: 40px;
+            display: flex;
+            display: -ms-flexbox;
+            /* TWEENER - IE 10 */
+            p {
+                font-size: 13px;
+                margin: 0 10px;
+            }
+            /*p{
+                flex: 1;
+                text-align: left;
+                font-size: 13px;
+            }
+            p:nth-of-type(2){
+                text-align: center;
+            }
+            p:nth-of-type(3),p:nth-of-type(4),p:nth-of-type(5){
+                flex: 0.5;
+            }*/
+        }
+        /*币种资料*/
+        .bz-zl {
+            cursor: pointer;
+            font-size: 15px;
+            span {
+                display: inline-block;
+                margin-right: 10px;
+            }
+        }
+    }
+}

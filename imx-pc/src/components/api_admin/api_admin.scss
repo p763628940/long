@@ -1,0 +1,658 @@
+/*白色版本开始*/
+
+.api_admin_content_title {
+    background: #fff !important;
+    border: 2px solid #ddd !important;
+    border-top: none !important;
+    color: #333;
+    .el-input__inner {
+        background: #fff !important;
+        color: #000 !important;
+    }
+    .api_admin_content_right {
+        p {
+            color: #333 !important;
+        }
+        ul {
+            color: #666 !important;
+            span {
+                color: #333;
+            }
+        }
+    }
+}
+
+.createTimeList_white {
+    border: 2px solid #eee !important;
+    border-top: none !important;
+    background: #fff !important;
+    .createTimeList_content {
+        td {
+            color: #000 !important;
+        }
+    }
+}
+
+.CurrencyAddress_alert_content_white {
+    background: #fff !important;
+    color: #000 !important;
+    .CurrencyAddress_alert_content_top_title {
+        color: #000 !important;
+        border-bottom: 1px solid #eee !important;
+    }
+    .isShowphone {
+        .text {
+            background: #eee !important;
+            color: #000 !important;
+        }
+    }
+    .title,
+    .phone-ma {
+        color: #000 !important;
+    }
+    .el-input__inner {
+        background: #fff !important;
+        color: #000 !important;
+        /*border: 1px solid #ddd !important;*/
+    }
+    .el-button--default {
+        color: #000 !important;
+        /*border-left: 1px solid #ddd !important;*/
+    }
+    .confirm_cancel {
+        border-top: 1px solid #ddd !important;
+        dd:nth-of-type(1) {
+            border-right: 1px solid #ddd !important;
+        }
+    }
+}
+/*创建成功部分*/
+
+.createSuccess_white {
+    .createSuccess_content {
+        background: #fff !important;
+        color: #000 !important;
+        .createSuccess_content_title {
+            span {
+                color: #000 !important;
+            }
+        }
+        .title {
+            color: #333 !important;
+        }
+        .secretkey {
+            background: #fff !important;
+            color: #000 !important;
+            .input {
+                color: #000 !important;
+            }
+            .copy {
+                color: #666 !important;
+            }
+        }
+    }
+}
+/*白色版本结束*/
+
+@media only screen and (max-width: 1450px) {
+    .api_admin_content_right {
+        margin-right: 0 !important;
+    }
+}
+
+@media only screen and (max-width: 1300px) {
+    .api_admin_content_right {
+        width: 50% !important;
+        margin-right: 20px !important;
+    }
+    .api_admin_content_right p {
+        margin: 10px 10px !important;
+    }
+}
+/*每人只能限定5条*/
+
+.limit {
+    position: fixed;
+    left: 35%;
+    top: 30%;
+    width: 350px;
+    height: 105px;
+    background: #fff;
+    color: #000;
+    border-top: 5px solid #f96a0e;
+    box-sizing: border-box;
+    z-index: 1000;
+    text-align: center;
+    .iconfont {
+        display: inline-block;
+        margin-top: 25px;
+        color: #f96a0e;
+        font-size: 20px;
+    }
+    p {
+        font-size: 14px;
+        margin-top: 10px;
+    }
+}
+/*编辑成功弹框*/
+
+.bianji_success {
+    width: 350px;
+    height: 105px;
+    background: #fff;
+    box-sizing: border-box;
+    color: #000;
+    text-align: center;
+    position: fixed;
+    left: 35%;
+    top: 40%;
+    z-index: 100;
+    border-top: 5px solid #22d9b8;
+    .iconfont {
+        display: inline-block;
+        margin-top: 30px;
+        font-size: 20px;
+        color: #22d9b8;
+    }
+    p {
+        font-size: 15px;
+        margin-top: 5px;
+    }
+}
+/*大盒子*/
+
+#api_admin {
+    width: 80%;
+    margin: 22px auto;
+    color: #fff;
+    /*分页样式*/
+    .el-pagination.is-background .el-pager li.active {
+        background: #9F99F2;
+    }
+    /*按钮大小*/
+    .el-button--primary {
+        width: 30% !important;
+        height: 40px !important;
+        margin-top: 30px;
+        background-color: #6666fa !important;
+        border: 1px solid #6666fa !important;
+    }
+    /*报错位置*/
+    .el-form-item__error {
+        width: 120px !important;
+        height: 50px;
+        text-align: center !important;
+        left: 65% !important;
+    }
+    /*改变element-ui的变化*/
+    .el-form-item__content {
+        margin: 0 !important;
+    }
+    .el-select {
+        width: 100% !important;
+    }
+    .el-input__inner {
+        width: 100% !important;
+        height: 45px !important;
+        color: #fff;
+        border: 1px solid #2c3983;
+        background: #101034;
+    }
+    .el-form-item {
+        margin-bottom: 0 !important;
+    }
+    .auth_text_blue {
+        color: #fff !important;
+    }
+    /*验证码*/
+    #you-yan {
+        position: relative;
+        #getYan,
+        #getma {
+            height: 30px;
+            line-height: 5px;
+            position: absolute;
+            right: 0;
+            top: 6px;
+            background: none;
+            border: none;
+            border-left: 1px solid #4e5b85;
+            border-radius: 0;
+        }
+    }
+}
+/*提示*/
+
+.tishi-red {
+    width: 100%;
+    height: 15px;
+    line-height: 25px;
+    color: #f56c6c;
+}
+/*获取数据展示*/
+
+.createTimeList {
+    width: 100%;
+    background: #16172b;
+    position: relative;
+    .copySuccess {
+        position: absolute;
+        left: 50%;
+        top: 10px;
+        color: greenyellow;
+        z-index: 66;
+    }
+    .createTimeList_title {
+        position: relative;
+        width: 100%;
+        height: 50px;
+        tr {
+            width: 100%;
+            height: 50px;
+            line-height: 50px;
+            td {
+                color: #3b3b61;
+            }
+            td:nth-of-type(1) {
+                width: 16%;
+                box-sizing: border-box;
+                padding-left: 20px;
+            }
+            td:nth-of-type(3) {
+                width: 28%;
+                height: 20px;
+                position: relative;
+                .oleft {
+                    display: inline-block;
+                    width: 70%;
+                    float: left;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                }
+                .oright {
+                    display: inline-block;
+                    width: 30%;
+                    text-align: center;
+                    color: #8f8cc3;
+                    cursor: pointer;
+                }
+                .boxKey {
+                    position: absolute;
+                    left: -95%;
+                    right: -160%;
+                    padding: 0 20px;
+                    line-height: 30px;
+                    border: 1px solid #8f8cc3;
+                    background: #16172b;
+                    z-index: 99;
+                    p {
+                        line-height: 20px;
+                        text-align: right;
+                        color: #8f8cc3;
+                        cursor: pointer;
+                    }
+                }
+            }
+            td:nth-last-child(1),
+            td:nth-last-child(2) {
+                text-align: center;
+            }
+        }
+        .createTimeList_content {
+            /*列表内容部分*/
+            tr {
+                border-bottom: 1px solid #9191c2;
+            }
+            tr:nth-child(1) {
+                border-bottom: none;
+            }
+            td {
+                color: #fff;
+                .Remarks,
+                .ip {
+                    /*备注*/
+                    width: 80px;
+                    height: 15px;
+                    line-height: 15px;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                    cursor: pointer;
+                }
+                .ipNull {
+                    text-align: left;
+                    box-sizing: border-box;
+                    padding-left: 20px;
+                    line-height: 12px;
+                }
+                .edit {
+                    /*编辑*/
+                    display: inline-block;
+                    width: 50px;
+                    height: 25px;
+                    cursor: pointer;
+                    text-align: center;
+                    line-height: 25px;
+                    border-radius: 4px;
+                    color: #8f8cc3;
+                    border: 1px solid #8f8cc3;
+                }
+                .remove {
+                    margin-left: 10px;
+                    cursor: pointer;
+                }
+            }
+            td:nth-last-child(3) {
+                box-sizing: border-box;
+                padding-left: 15px;
+            }
+        }
+    }
+}
+/*头部*/
+
+.api_admin_title {
+    width: 100%;
+    height: 50px;
+    background: #272962;
+    P {
+        width: 150px;
+        height: 50px;
+        text-align: center;
+        line-height: 50px;
+        font-size: 16px;
+    }
+}
+
+.api_admin_content+.wode {
+    margin-top: 30px;
+}
+/*备注 绑定IP地址*/
+
+.api_admin_content {
+    width: 100%;
+    height: 275px;
+    background: #16172b;
+    border-top: none;
+    box-sizing: border-box;
+}
+/*左侧内容*/
+
+.api_admin_content_left {
+    width: 350px;
+    position: relative;
+    .tishi {
+        position: absolute;
+        top: 75%;
+        left: 65%;
+        z-index: 998;
+        color: #f56c6c;
+    }
+    float: left;
+    .input-item {
+        width: 100%;
+        height: 80px;
+        margin-left: 20px;
+        .input-item-title {
+            width: 100%;
+            height: 40px;
+            line-height: 40px;
+            margin-top: 10px;
+        }
+    }
+    .item-button {
+        width: 100%;
+        margin-left: 20px;
+    }
+}
+/*右侧提示内容*/
+
+.api_admin_content_right {
+width:50%;
+    float: right;
+    font-size: 14px;
+    margin-right: 10%;
+    p {
+        color: #fff;
+        margin-top: 25px;
+        margin-bottom: 30px;
+    }
+    ul {
+        color: #3b3968;
+        li {
+            line-height: 30px;
+            span {
+                color: #fff;
+            }
+        }
+    }
+}
+/*创建成功弹框内容*/
+
+.createSuccess {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 888;
+    /*复制成功*/
+    .copySuccess {
+        position: fixed;
+        left: 50%;
+        top: 30%;
+        z-index: 1000;
+        color: greenyellow;
+    }
+    /*创建大box*/
+    .createSuccess_content {
+        position: fixed;
+        left: 38%;
+        top: 20%;
+        z-index: 999;
+        width: 450px;
+        color: #fff;
+        background: #222140;
+        box-sizing: border-box;
+        padding: 0 20px 40px 20px;
+        /*创建头部*/
+        .createSuccess_content_title {
+            width: 100%;
+            height: 60px;
+            line-height: 60px;
+            span {
+                color: #fff;
+                font-size: 16px;
+                float: left;
+            }
+            .iconfont {
+                font-size: 14px;
+                float: right;
+                cursor: pointer;
+            }
+        }
+        /*头部提示  访问密钥   私密密钥   绑定ip地址*/
+        .title {
+            width: 100%;
+            height: 30px;
+            line-height: 30px;
+            margin-top: 20px;
+            color: #6666fa;
+            .only_One {
+                color: #C05157;
+                margin-left: 92px;
+            }
+        }
+        /*密钥内容*/
+        p.input{
+             overflow: hidden;
+             text-overflow:
+             ellipsis;
+        }
+        .secretkey {
+            width: 100%;
+            height: 45px;
+            line-height: 45px;
+            border: 1px solid #2c3983;
+            border-radius: 4px;
+            background: #101034;
+            .input {
+                width: 80%;
+                height: 90%;
+                margin-left: 10px;
+                background: none;
+                border: none;
+                outline: none;
+                color: #fff;
+                font-size: 15px;
+                float: left;
+            }
+            .border-right {
+                width: 1px;
+                height: 25px;
+                display: inline-block;
+                border-right: 1px solid #6666fa;
+                float: left;
+                margin-top: 10px;
+            }
+            .copy {
+                display: inline-block;
+                float: left;
+                width: 15%;
+                text-align: center;
+                height: 100%;
+                cursor: pointer;
+                font-size: 16px;
+                color: #6666fa;
+            }
+        }
+        /*提示内容部分*/
+        .prompt {
+            width: 100%;
+            margin-top: 30px;
+            color: #6666fa;
+            li {
+                line-height: 18px;
+            }
+        }
+        /*按钮部分*/
+        .button {
+            width: 100%;
+            text-align: right;
+        }
+    }
+}
+/*安全验证弹框内容*/
+
+.CurrencyAddress_alert {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    /*蒙版*/
+    .CurrencyAddress_alert_menban {
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.6);
+        z-index: 88;
+    }
+    /*按钮*/
+    /*确认取消*/
+    .confirm_cancel {
+        width: 100%;
+        height: 56px;
+        line-height: 56px;
+        border-top: 1px solid #454167;
+        margin-top: 30px;
+        dd {
+            width: 50%;
+            height: 56px;
+            box-sizing: border-box;
+            float: left;
+            text-align: center;
+            cursor: pointer;
+            font-size: 15px;
+        }
+        dd:nth-of-type(1) {
+            border-right: 1px solid #454167;
+        }
+    }
+    /*内容*/
+    .CurrencyAddress_alert_content {
+        width: 450px;
+        background: #222140;
+        position: fixed;
+        left: 40%;
+        top: 10%;
+        z-index: 999;
+        /*内容的上半部分*/
+        .CurrencyAddress_alert_content_top {
+            width: 100%;
+            box-sizing: border-box;
+            padding: 0 20px;
+            /*安全验证内容*/
+            .CurrencyAddress_alert_content_top_title {
+                width: 100%;
+                height: 58px;
+                line-height: 58px;
+                border-bottom: 1px solid #454167;
+                span {
+                    float: left;
+                    font-size: 16px;
+                }
+                .iconfont {
+                    float: right;
+                    cursor: pointer;
+                }
+            }
+            .oInput {
+                width: 100%;
+                height: 50px;
+            }
+            .phone {
+                width: 100%;
+                .isShowphone {
+                    /*手机验证那块*/
+                    width: 100%;
+                    /*margin-top: 50px;*/
+                    .title {
+                        width: 100%;
+                        height: 35px;
+                        line-height: 35px;
+                        color: #fff;
+                    }
+                    .text {
+                        width: 100%;
+                        height: 40px;
+                        line-height: 40px;
+                        box-sizing: border-box;
+                        padding-left: 10px;
+                        background: #101034;
+                        border-radius: 5px;
+                        font-size: 16px;
+                        color: #fff;
+                    }
+                }
+                .phone-ma {
+                    width: 100%;
+                    height: 35px;
+                    line-height: 35px;
+                    color: #fff;
+                    margin-top: 10px;
+                }
+            }
+            .email {
+                @extend .phone;
+                .isShowphone {
+                    margin-top: 20px !important;
+                }
+            }
+            .google {
+                @extend .phone;
+            }
+        }
+    }
+}

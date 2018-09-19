@@ -1,0 +1,9 @@
+[submodule "src/store/modules"]
+	path = src/store/modules
+	url = git@gitlab.imx.com:yanghongrui/store-modules.git
+[submodule "src/api"]
+	path = src/api
+	url = git@gitlab.imx.com:yanghongrui/api-front.git
+[submodule "dist"]
+	path = dist
+	url = git@gitlab.imx.com:juchao/static.m.imx.com.git

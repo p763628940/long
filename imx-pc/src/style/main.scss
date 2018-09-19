@@ -1,0 +1,49 @@
+.el-message-box{
+    width: 630px ;
+    max-height: 494px ;
+    border:0px ;
+}
+.el-message-box__header{
+    background-image: url(../assets/alertHeader.png) ;
+    background-repeat:no-repeat ;
+    height: 52px ;
+    padding-left: 40px ;
+    .el-message-box__title{
+        font-size: 24px ;
+    }
+
+}
+.el-message-box__message{
+    overflow-y: auto;
+    max-height: 278px;
+}
+.el-message-box__content{
+    padding-left: 65px ;
+    padding-right: 65px ;
+    font-size: 16px ;
+
+}
+.el-message-box--center{
+
+    .el-message-box__title{
+        color: #ffffff ;
+        justify-content:left ;
+
+    }
+}
+.el-message-box__btns{
+    padding-top: 24px ;
+}
+.alert-confirm-button{
+    background-color: #60c8c4 !important;
+    border-color:#60c8c4 !important;
+    min-width: 210px ;
+    height: 48px ;
+    font-size: 24px ;
+    padding: initial ;
+
+}
+.alert-confirm-button:hover{
+    background-color: #60c8c4 !important;
+    border-color:#60c8c4 !important;
+}
